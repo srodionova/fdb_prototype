@@ -1,0 +1,7 @@
+site_name: My Analyst Sweet Home
+nav:
+  - Home: index.md
+  - Sources: sources.md
+  - Queries: queries.md
+theme:
+  name: material

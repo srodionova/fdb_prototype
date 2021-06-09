@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "fdb"
+      POSTGRES_DB: "fdb"
+      POSTGRES_USER: "fdb"
+    ports:
+      - 5432:5432
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: y
+      SA_PASSWORD: yourStrong(!)Password
+    ports:
+    - 1433:1433
